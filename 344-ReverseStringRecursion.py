@@ -4,16 +4,14 @@ class Solution:
         Do not return anything, modify s in-place instead.
         """
         
-        length = len(s)
-        
-        def helper(idx):
-            if idx > length / 2 - 1:
+        def helper(start, end):
+            if start >= end:
                 return
-            s[idx], s[length - idx -1] = s[length - idx - 1], s[idx]
-            helper(idx + 1)
+            s[start], s[end] = s[end], s[start]
+            start += 1
+            end -= 1
+            helper(start, end)
         
-        helper(0)
+        helper(0, len(s) - 1)
         
         return s
-                
-        

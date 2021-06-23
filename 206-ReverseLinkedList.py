@@ -19,4 +19,17 @@ class Solution:
             head = curr
         
         return head
-            
+
+# Recursion
+class Solution:
+    def reverseList(self, head: ListNode) -> ListNode:
+        
+        if not head or not head.next:
+            return head
+        
+        left = self.reverseList(head.next)
+        # Place head node at the end
+        head.next.next = head
+        head.next = None
+        
+        return left         

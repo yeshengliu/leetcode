@@ -7,6 +7,7 @@ class Solution:
         def helper(n):
             if n in results:
                 return results[n]
-            return helper(n - 1) + helper(n - 2)
+            results[n] = helper(n - 1) + helper(n - 2)
+            return results[n]
         
         return helper(n)

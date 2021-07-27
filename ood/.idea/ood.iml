@@ -11,6 +11,9 @@
       <sourceFolder url="file://$MODULE_DIR$/call-center" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/jigsaw" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/parking-lot" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/chess" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/call-center" />
+      <excludeFolder url="file://$MODULE_DIR$/jigsaw" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
